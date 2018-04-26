@@ -87,6 +87,14 @@ func Int64(val interface{}) int64 {
 		i, _ := strconv.Atoi(string(t))
 		return int64(i)
 	case string:
+		b, err := strconv.ParseBool(t)
+		if err == nil {
+			if b {
+				return int64(1)
+			}
+
+			return int64(0)
+		}
 		i, _ := strconv.ParseFloat(t, 64)
 		return int64(i)
 	default:
