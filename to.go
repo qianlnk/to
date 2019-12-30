@@ -156,12 +156,12 @@ func Int(val interface{}) int {
 	return int(Int64(val))
 }
 
-//ToInt32 change val type to int32
+//Int32 change val type to int32
 func Int32(val interface{}) int32 {
 	return int32(Int64(val))
 }
 
-//ToFloat32 change type to float32
+//Float32 change type to float32
 func Float32(val interface{}) float32 {
 	return float32(Float64(val))
 }

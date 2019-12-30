@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"gitlab.ulaiber.com/uchang/util/to"
+	"github.com/qianlnk/to"
 )
 
 func TestTo(t *testing.T) {
